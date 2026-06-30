@@ -1,0 +1,9 @@
+****** INFORME INSTITUCIONAL BIBLIOTECA UTN AVELLANEDA ******
+Fecha y hora de generacion: 30/06/2026 19:22:29
+--------------------------------------------------------
+Cantidad total de socios registrados: 2
+Cantidad total de libros registrados: 3
+Cantidad de libros disponibles: 2
+Cantidad de prestamos activos: 1
+Libro mas solicitado: Rayuela (Prestado 1 veces)
+---------------------------------------------------------------
