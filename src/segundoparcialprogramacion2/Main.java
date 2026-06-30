@@ -6,11 +6,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        //--------------------------------------------
         Scanner scanner = new Scanner(System.in);
         Biblioteca biblioteca = new Biblioteca();
+        //--------------------------------------------
         cargarDatosDePrueba(biblioteca);
         
-        
+        //--------------------------------------------
         Menu menu = new Menu(scanner, biblioteca);
         menu.iniciar();
         
