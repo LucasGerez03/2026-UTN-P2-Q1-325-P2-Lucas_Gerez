@@ -22,17 +22,19 @@ public class Main {
             //-----------------------------------------------------------------
             //Registro 3 libros
             
-            b.registrarLibro("A001", "El Aleph", "Jorge Luis Borges", 1949);
-            b.registrarLibro("E210", "Rayuela", "Julio Cortazar", 1963);
-            b.registrarLibro("C007", "Ficciones", "Jorge Luis Borges", 1944);
+            b.registrarLibro("A001", "el Aleph", "Jorge Luis Borges", 1959);
+            b.registrarLibro("E000", "rayuela", "Julio Cortazar", 1973);
+            b.registrarLibro("C912", "El principito", "nose", 1994);
 
             //-----------------------------------------------------------------
-            b.registrarSocio("20111222", "Lucas", "Messi", "asd@email.com");
-            b.registrarSocio("35444555", "pepito", "pepito", "pepito@email.com");
+            //registro de socios
+            b.registrarSocio("1234", "Lucas", "Messi", "asd@email.com");
+            b.registrarSocio("5678", "pepito", "pepito", "pepito@email.com");
 
             
             //-----------------------------------------------------------------
-            b.realizarPrestamo("P008", "20111222");
+            //prestamos
+            b.realizarPrestamo("A001", "1234");
             
             //-----------------------------------------------------------------
             System.out.println("[INFO] Se han cargado datos de prueba automaticamente.");

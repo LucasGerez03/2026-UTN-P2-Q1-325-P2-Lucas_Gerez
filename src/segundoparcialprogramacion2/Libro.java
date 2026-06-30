@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package segundoparcialprogramacion2;
 
 import java.io.Serializable;
 
 public class Libro implements Serializable, GestorDeId {
-
+    //------------------------------------------------
+    //atributos
     private static final long serialVersionUID = 1L;
     private String codigo;
     private String titulo;
@@ -15,7 +12,9 @@ public class Libro implements Serializable, GestorDeId {
     private int anioPublicacion;
     private boolean disponible;
     private int vecesPrestado;
-
+    
+    //------------------------------------------------
+    //Constructor
     public Libro(String codigo, String titulo, String autor, int anioPublicacion) {
         this.codigo = codigo;
         this.titulo = titulo;
@@ -25,6 +24,8 @@ public class Libro implements Serializable, GestorDeId {
         this.vecesPrestado = 0;
     }
 
+    //------------------------------------------------
+    //getters
     public String getCodigo() {
         return codigo;
     }
@@ -44,7 +45,9 @@ public class Libro implements Serializable, GestorDeId {
     public int getVecesPrestado() {
         return vecesPrestado;
     }
-
+    
+    //--------------------------------------------
+    //metodos
     public void incrementarPrestamos() {
         this.vecesPrestado++;
     }

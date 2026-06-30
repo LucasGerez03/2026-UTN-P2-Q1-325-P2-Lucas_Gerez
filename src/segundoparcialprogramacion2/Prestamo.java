@@ -19,6 +19,7 @@ public class Prestamo implements Serializable, GestorDeId {
     private boolean activo;
 
     //---------------------------------------------------------
+    //Constructor
     public Prestamo(int idPrestamo, Libro libro, Socio socio) {
         this.idPrestamo = idPrestamo;
         this.libro = libro;
@@ -26,7 +27,9 @@ public class Prestamo implements Serializable, GestorDeId {
         this.fechaPrestamo = LocalDate.now();
         this.activo = true;
     }
-
+    
+    ////----------------------------------------------------------
+    //getters
     public int getIdPrestamo() {
         return idPrestamo;
     }
@@ -48,13 +51,13 @@ public class Prestamo implements Serializable, GestorDeId {
     }
 
     //---------------------------------------------------------
+    //metodos
     public void registrarDevolucion() {
         this.fechaDevolucion = LocalDate.now();
         this.activo = false;
         this.libro.setDisponible(true);
     }
 
-    //---------------------------------------------------------
     @Override
     public String obtenerId() {
         return String.valueOf(idPrestamo);

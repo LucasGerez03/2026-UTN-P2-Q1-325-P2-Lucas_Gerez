@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package segundoparcialprogramacion2;
 
 import java.time.LocalDateTime;
@@ -25,14 +21,7 @@ public class Biblioteca implements Exportable {
         System.out.println("Socio registrado exitosamente.");
     }
 
-    // -----------------------------------------------------------------
-    //opcion  3
-    public void listarSocios() {
-        for (Socio socio : repoSocios.listar()) {
-            System.out.println(socio.toString());
-        }
-    }
-    
+   
     // -----------------------------------------------------------------
     //opcion 2
     public void registrarLibro(String codigo, String titulo, String autor, int anio) {
@@ -42,6 +31,15 @@ public class Biblioteca implements Exportable {
         repoLibros.agregar(new Libro(codigo, titulo, autor, anio));
         System.out.println("Libro registrado exitosamente.");
     }
+    
+     // -----------------------------------------------------------------
+    //opcion  3
+    public void listarSocios() {
+        for (Socio socio : repoSocios.listar()) {
+            System.out.println(socio.toString());
+        }
+    }
+    
     // -----------------------------------------------------------------
     //opcion 4
     public void listarLibrosDisponibles() {
@@ -187,7 +185,7 @@ public class Biblioteca implements Exportable {
                     maxId = prestamo.getIdPrestamo();
                 }
             }
-            contadorIdPrestamos = maxId + 1;
+            contadorIdPrestamos = maxId + 1; //AUTOINCREMENTAL PARA LOS PRESTAMOS
             
             System.out.println("Datos previos cargados exitosamente.");
         } catch (Exception e) {

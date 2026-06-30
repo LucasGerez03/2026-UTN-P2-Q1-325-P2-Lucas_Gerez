@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Repositorio<T extends GestorDeId> implements Serializable {
-
+    //--------------------------------------------------
     private static final long serialVersionUID = 1L;
     private HashMap<String, T> elementos;
 
@@ -33,4 +33,5 @@ public class Repositorio<T extends GestorDeId> implements Serializable {
     public boolean existe(String id) {
         return elementos.containsKey(id);
     }
+    //--------------------------------------------------
 }

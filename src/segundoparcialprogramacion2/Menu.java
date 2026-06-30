@@ -12,7 +12,7 @@ public class Menu {
         this.sc = sc;
         this.biblioteca = biblioteca;
     }
-    //auxiliares para levantar las opciones del menu, ( iniciar() )
+    //metodos auxiliares para levantar las opciones del menu, ( iniciar() )
     //------------------------------------------------------------------
     public static int leerEnteros(String mensaje, Scanner scanner) {
         while (true) {
