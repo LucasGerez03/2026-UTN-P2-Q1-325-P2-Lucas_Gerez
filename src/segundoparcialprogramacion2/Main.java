@@ -22,9 +22,9 @@ public class Main {
             //-----------------------------------------------------------------
             //Registro 3 libros
             
-            b.registrarLibro("L001", "El Aleph", "Jorge Luis Borges", 1949);
-            b.registrarLibro("L002", "Rayuela", "Julio Cortazar", 1963);
-            b.registrarLibro("L003", "Ficciones", "Jorge Luis Borges", 1944);
+            b.registrarLibro("A001", "El Aleph", "Jorge Luis Borges", 1949);
+            b.registrarLibro("E210", "Rayuela", "Julio Cortazar", 1963);
+            b.registrarLibro("C007", "Ficciones", "Jorge Luis Borges", 1944);
 
             //-----------------------------------------------------------------
             b.registrarSocio("20111222", "Lucas", "Messi", "asd@email.com");
@@ -32,10 +32,10 @@ public class Main {
 
             
             //-----------------------------------------------------------------
-            b.realizarPrestamo("L002", "20111222");
+            b.realizarPrestamo("P008", "20111222");
             
             //-----------------------------------------------------------------
-            System.out.println("[INFO] Se han cargado datos de prueba automáticamente.");
+            System.out.println("[INFO] Se han cargado datos de prueba automaticamente.");
         } catch (Exception e) {
             System.out.println("[INFO] No se pudieron cargar los datos de prueba: " + e.getMessage());
         }
